@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang='en-US'>
+    <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width'>
+    <script src="/socket.io/socket.io.js"></script>
+    <script data-main="js/init" src='js/lib/require.js'></script>
+    <link href='http://fonts.googleapis.com/css?family=Syncopate:400,700|Alegreya:400,900,400italic,700,700italic,900italic' rel='stylesheet' type='text/css'>
+    <title>Pokemon HTML5 Game</title>
+        <link rel='stylesheet' href='assets/interface/css/main.css'/>
+    </head>
+<body>
+
+    <section class="playerlist">
+        <h4>Players:</h4>
+        <hr>
+        <ul>
+
+        </ul>
+    </section>
+    <section class="playerconsole">
+        <h4>Log:</h4>
+        <hr>
+        <ul>
+
+        </ul>
+    </section>
+    
+    <section class="game">
+        <div class="container">
+            <div id="logo"></div>
+            <div id="pokeball"></div>
+            <div id="intro-container">
+                <div class="box">
+                    <h1>Welcome in the Pokemon Quest !</h1>
+                    <input id="nameinput" type="text" placeholder="Player name">
+                    <div id="btn-start" class="btn start">Start game</div>
+                </div>
+            </div>
+            <div id="game-container">
+                <div id="canvas-container">                    
+                    <canvas id="foreground"></canvas>
+                    <canvas id="entities"></canvas>
+                    <canvas id="background"></canvas>
+                </div>
+                <div id="bar-container"></div>
+                <div id="chatbox"></div>
+            </div>
+        </div>
+    </section>
+
+
+    
+   
+</body>
+</html>

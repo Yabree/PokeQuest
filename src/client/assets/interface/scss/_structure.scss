@@ -1,0 +1,201 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: url('../img/bg.jpg');
+	position: relative;
+}
+
+.btn{
+	width: 200px;
+	height: 35px;
+	background: #9DEE47;
+/* 	position: absolute;
+	top: 45%;
+	left: 45%; */
+	color: white;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 20px;
+	box-shadow: 0 0 0px 6px #1D283D;
+	cursor: pointer;
+	z-index: 100;
+	&:hover{
+		background: #CFFB8A;
+		color: #4BD800;
+	}
+}
+
+section.game{
+	width: 980px;
+	height: 500px;
+	padding: 10px;
+	background: url('../img/game-border.png');
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -490px;
+
+	div.container{
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+		#logo{
+			width: 400px;
+			height: 189px;
+			height: 300px;
+			background: url('../img/logo.png');
+			background-repeat: no-repeat;
+			position: absolute;
+			top: -100px;
+			left: -150px;
+			z-index: 100;
+		}
+
+		#pokeball{
+			width: 126px;
+			height: 123px;
+			background: url('../img/ball.png');
+			position: absolute;
+			bottom: -60px;
+			right: -60px;
+			z-index: 100;
+		}
+
+
+		#intro-container{
+			width: 100%;
+			height: 100%;			
+			overflow: hidden;
+
+			.box{
+				width: 400px;
+				height: 400px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -200px;
+				margin-left: -200px;
+			}
+
+			h1{
+				width: auto;
+				text-align: center;
+				margin-top: 20px;
+				color: white;
+			}
+
+			input{
+				height: 35px;
+				margin: 0px auto;
+				display: block;
+				border-radius: 8px;
+				margin-top: 20px;
+				padding: 5px 20px;
+			}
+
+			.btn{
+				display: block;
+				margin: 0px auto;
+				margin-top: 150px;
+			}
+		}
+
+
+		#game-container{
+			width: 100%;
+			height: 100%;			
+			overflow: hidden;
+			display: none;
+
+			#canvas-container{
+				width: 100%;
+				height: 445px;
+				background: whitesmoke;
+				position: relative;				
+
+				canvas {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0; left: 0;
+				    image-rendering: optimizeSpeed;             // Older versions of FF
+				    image-rendering: -moz-crisp-edges;          // FF 6.0+
+				    image-rendering: -webkit-optimize-contrast; // Webkit
+				                                                //  (Safari now, Chrome soon)
+				    image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+				    image-rendering: optimize-contrast;         // Possible future browsers.
+				    -ms-interpolation-mode: nearest-neighbor;   // IE
+				}
+
+				canvas#foreground{
+					z-index: 50;
+				}
+
+				canvas#entities{
+					z-index: 45;
+				}
+
+				canvas#background{
+					z-index: 40;
+				}
+
+			}
+
+			#bar-container{
+				width: 100%;
+				height: 35px;
+				background: silver;
+			}
+		}
+
+
+
+	}
+
+
+}
+
+
+section.playerlist{
+	width: 200px;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: whitesmoke;
+	display: block;
+	min-height: 100px;
+
+	ul, li{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		list-style: none;
+	}
+}
+
+section.playerconsole{
+	width: 250px;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: whitesmoke;
+	display: block;
+	min-height: 100px;
+	font-size: 10px;
+
+	ul, li{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		list-style: none;
+	}
+}

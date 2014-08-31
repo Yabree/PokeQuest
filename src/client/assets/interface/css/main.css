@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0; }
+
+body, span, input, div, h1, h2, h3, h4 {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 100; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: url("../img/bg.jpg");
+  position: relative; }
+
+.btn {
+  width: 200px;
+  height: 35px;
+  background: #9DEE47;
+  /* 	position: absolute;
+  	top: 45%;
+  	left: 45%; */
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 0 0px 6px #1D283D;
+  cursor: pointer;
+  z-index: 100; }
+  .btn:hover {
+    background: #CFFB8A;
+    color: #4BD800; }
+
+section.game {
+  width: 980px;
+  height: 500px;
+  padding: 10px;
+  background: url("../img/game-border.png");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -490px; }
+  section.game div.container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    section.game div.container #logo {
+      width: 400px;
+      height: 189px;
+      height: 300px;
+      background: url("../img/logo.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: -100px;
+      left: -150px;
+      z-index: 100; }
+    section.game div.container #pokeball {
+      width: 126px;
+      height: 123px;
+      background: url("../img/ball.png");
+      position: absolute;
+      bottom: -60px;
+      right: -60px;
+      z-index: 100; }
+    section.game div.container #intro-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      section.game div.container #intro-container .box {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -200px; }
+      section.game div.container #intro-container h1 {
+        width: auto;
+        text-align: center;
+        margin-top: 20px;
+        color: white; }
+      section.game div.container #intro-container input {
+        height: 35px;
+        margin: 0px auto;
+        display: block;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 5px 20px; }
+      section.game div.container #intro-container .btn {
+        display: block;
+        margin: 0px auto;
+        margin-top: 150px; }
+    section.game div.container #game-container {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: none; }
+      section.game div.container #game-container #canvas-container {
+        width: 100%;
+        height: 445px;
+        background: whitesmoke;
+        position: relative; }
+        section.game div.container #game-container #canvas-container canvas {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          image-rendering: optimizeSpeed;
+          image-rendering: -moz-crisp-edges;
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: -o-crisp-edges;
+          image-rendering: optimize-contrast;
+          -ms-interpolation-mode: nearest-neighbor; }
+        section.game div.container #game-container #canvas-container canvas#foreground {
+          z-index: 50; }
+        section.game div.container #game-container #canvas-container canvas#entities {
+          z-index: 45; }
+        section.game div.container #game-container #canvas-container canvas#background {
+          z-index: 40; }
+      section.game div.container #game-container #bar-container {
+        width: 100%;
+        height: 35px;
+        background: silver; }
+
+section.playerlist {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: whitesmoke;
+  display: block;
+  min-height: 100px; }
+  section.playerlist ul, section.playerlist li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none; }
+
+section.playerconsole {
+  width: 250px;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: whitesmoke;
+  display: block;
+  min-height: 100px;
+  font-size: 10px; }
+  section.playerconsole ul, section.playerconsole li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none; }

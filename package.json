@@ -1,0 +1,13 @@
+{
+  "name": "PokemonsQuest",
+  "version": "0.0.1",
+  "private": false,
+  "main" : "src/server/js/main.js",
+  "dependencies": {
+    "underscore"  : ">0",
+    "express"     : ">0",
+    "socket.io"   : ">=1.0",
+    "log"         : ">0",
+    "tracer"      : "~0.7.1"
+  }
+}
